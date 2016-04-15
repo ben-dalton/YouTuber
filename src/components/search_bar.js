@@ -14,9 +14,13 @@ class SearchBar extends Component {
 	render() {
 		return (
 			<div>
+				<br />
 				<input 
+					className="form-control"
+					placeholder="Search YouTube..."
 					value={this.state.term}
 					onChange={event => this.onInputChange(event.target.value)} />
+				<br />
 			</div>
 		)
 	}
